@@ -79,41 +79,41 @@ function game() {
     
         // Displays game result on console
         function displayResult() {
-	    const result = playRound(playerSelection, computerSelection);
-	
-	    switch (result) {
-	        case "tie":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore} Computer \nIt's a tie!`);
-		    break;
-	        case "player rock":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore += 1}:${computerScore} Computer \nRock blunts Scissor!`);
-		    break;
-	        case "player paper":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore += 1}:${computerScore} Computer \nPaper covers Rock!`);
-		    break;
-	        case "player scissor":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore += 1}:${computerScore} Computer \nScissor shreds Paper!`);
-		    break;
-	        case "computer rock":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore += 1} Computer \nRock blunts Scissor!`);
-		    break;
-	        case "computer paper":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore += 1} Computer \nPaper covers Rock!`);
-		    break;
-	        case "computer scissor":
-		    console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore += 1} Computer \nScissor shreds Paper!`);
-		    break;
-	    }
+	   		const result = playRound(playerSelection, computerSelection);                                                          
+	                                                                                                                              
+	        switch (result) {
+	            case "tie":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore} Computer \nIt's a tie!`);
+		        	break;
+	            case "player rock":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore += 1}:${computerScore} Computer \nRock blunts Scissor!`);
+		        	break;
+	            case "player paper":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore += 1}:${computerScore} Computer \nPaper covers Rock!`);
+		        	break;
+	            case "player scissor":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore += 1}:${computerScore} Computer \nScissor shreds Paper!`);
+		        	break;
+	            case "computer rock":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore += 1} Computer \nRock blunts Scissor!`);
+		        	break;
+	            case "computer paper":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore += 1} Computer \nPaper covers Rock!`);
+		        	break;
+	            case "computer scissor":
+		        	console.log(`Round ${i}: \n${playerName} ${playerScore}:${computerScore += 1} Computer \nScissor shreds Paper!`);
+		    		break;
+	    	}
 
-	    if (i === 5) {
-	        if (playerScore === computerScore) {
-		    console.log(`It's a Draw! ${playerName} and Computer has equal points. Unfortunately...`);
-	        } else if (playerScore > computerScore) {
-		    console.log(`${playerName} wins the game with ${playerScore} points. Hurray!!!`);
-	        } else {
-		    console.log(`Computer wins the game with ${computerScore} points. Hurray!!!`);
-	        }
-	    }
+	   		if (i === 5) {                                                                                 
+	            if (playerScore === computerScore) {
+		        console.log(`It's a Draw! ${playerName} and Computer has equal points. Unfortunately...`);
+	       		} else if (playerScore > computerScore) {                                         
+		        console.log(`${playerName} wins the game with ${playerScore} points. Hurray!!!`);
+	       		} else {                                                                       
+		        console.log(`Computer wins the game with ${computerScore} points. Hurray!!!`);
+	        	}
+	    	}
         }
     }
 }
